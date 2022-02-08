@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import TopMenu from './assets/TopMenu'
 
 function App() {
   return (
-    <TopMenu />
+  <div className='App'>
+    <h>App page</h>
+  </div>
   );
 }
 

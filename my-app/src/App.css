@@ -1,9 +1,18 @@
 :root{
-  --header-bg-color: #282c34;
+  --header-bg-color: #D6CEC0;
+  --main-background: #FDF4E3;
+  --accent-color: #79BCDF;
+  --font-color: #3F383B;
+  --header-text-size: 125%;
+  --header-title-text-size: 250%;
 }
 
 .App {
   text-align: center;
+  background-color: var(--main-background);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -41,10 +50,56 @@
   }
 }
 
-.TopMenu {
-  text-align: center;
+.parent {
+  flexDirection: "row";
+  justifyContent: "space-between";
 }
 
-.TopMenu-header {
+.TopMenu {
   background-color: var(--header-bg-color);
+  padding-top: 5vh;
+  padding-right: 5vw;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.grid-item {
+}
+
+.leftalign {
+  text-align: left;
+  margin-top: auto;
+}
+
+.rightalign {
+  text-align: right;
+  margin-top: auto;
+}
+
+.TopMenu-button {
+  transition-duration: .4s;
+  margin: 0vh;
+  padding: 0rem 1rem 0rem 1rem;
+  font-size: var(--header-text-size);
+}
+
+.TopMenu-button:hover {
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+.TopMenu-buttongroup {
+  block-size: fit-content;
+  width: fit-content;
+  padding: 0px;
+  margin: 0px;
+}
+
+.TopMenu-title-text {
+            text-align: left;
+  font-size: var(--header-title-text-size);
+  padding: 1rem 1rem 0rem 1rem;
 }
