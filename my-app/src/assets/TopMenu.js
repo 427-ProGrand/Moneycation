@@ -1,11 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 class TopMenu extends React.Component {
   render() {
     return (
-        <div className="App">
-              <header className="App-header">
+        <div className="TopMenu">
+              <header className="TopMenu-header">
                 <p>
                   test index page
                 </p>
