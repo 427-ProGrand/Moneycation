@@ -9,10 +9,9 @@ class TopMenu extends React.Component {
             <h className={"TopMenu-title-text"}>Moneycation</h>
           </div>
           <div className={"TopMenu-buttongroup", "grid-item", "rightalign"}>
-            <a className={"TopMenu-button"}>Home</a>
-            <a className={"TopMenu-button"}>Planner</a>
-            <a className={"TopMenu-button"}>Settings</a>
-            <a className={"TopMenu-button"}>Login/Signup</a>
+            <a className={"TopMenu-button"} href="/planner">Planner</a>
+            <a className={"TopMenu-button"}  href="/settings">Settings</a>
+            <a className={"TopMenu-button"} href="/login">Login/Signup</a>
           </div>
         </div>
       </div>
