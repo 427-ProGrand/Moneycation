@@ -7,16 +7,16 @@ A web / desktop application for ICS 427 Software Quality Assurance.
 #### Completed Tasks ####
 
 * Nav Bar Html
+* Button for import/export data [Settings]
+* Button to delete account [Settings]
+* Button to change password [Settings]
 
 #### Pending Tasks ####
 
-* Button for import/export data [Settings]
 * Import functionality for import/export data
 
-* Button to delete account [Settings]
 * Import functionality for deleting account
 
-* Button to change password [Settings]
 * Import functionality to change password
 
 * Page for Sign In / Sign Up [Sign In/Sign Up]
@@ -43,7 +43,8 @@ A web / desktop application for ICS 427 Software Quality Assurance.
 _Katherine Piniol_
 
 * Nav Bar HTML (Complete)
-* Settings Page HTML (WIP)
+* Settings Page HTML (Complete)
+* Settings Page Functionality
 
 _Darnell Domingo_
 
