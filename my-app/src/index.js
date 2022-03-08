@@ -1,8 +1,9 @@
 import React from 'react';
-import ReactDOM, {Link} from 'react-dom';
+import ReactDOM from 'react-dom';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import './index.css';
 import App from './App';
+import ErrorPage from './ui/screens/ErrorPage';
 import LoginPage from './ui/screens/LoginPage';
 import SettingsPage from './ui/screens/SettingsPage';
 import PlannerPage from './ui/screens/PlannerPage';
@@ -16,6 +17,7 @@ ReactDOM.render(
       <Route path="login" element={<LoginPage/>}/>
       <Route path="settings" element={<SettingsPage/>}/>
       <Route path="planner" element={<PlannerPage/>}/>
+      <Route path="*" element={<ErrorPage/>}/>
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')
