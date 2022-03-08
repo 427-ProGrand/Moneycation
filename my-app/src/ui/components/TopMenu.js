@@ -1,9 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import {Link} from 'react-router-dom';
-import LoginPage from '../screens/LoginPage';
-import SettingsPage from '../screens/SettingsPage';
-import PlannerPage from '../screens/PlannerPage';
 
 class TopMenu extends React.Component {
   render() {
