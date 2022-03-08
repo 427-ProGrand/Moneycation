@@ -1,7 +1,7 @@
 :root{
-  --header-bg-color: #D6CEC0;
-  --main-background: #FDF4E3;
-  --accent-color: #79BCDF;
+  --header-bg-color: #4297a0;
+  --main-background: #f4eae6;
+  --accent-color: #2f5061;
   --font-color: #3F383B;
   --header-text-size: 125%;
   --header-title-text-size: 250%;
@@ -153,7 +153,7 @@
 }
 
 .settings-select-button:hover {
-  background-color: gray;
+  background-color: var(--accent-color);
   cursor: pointer;
 }
 
