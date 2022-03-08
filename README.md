@@ -43,6 +43,7 @@ A web / desktop application for ICS 427 Software Quality Assurance.
 _Katherine Piniol_
 
 * Nav Bar HTML (Complete)
+* Nav Bar Functionality (Complete)
 * Settings Page HTML (Complete)
 * Settings Page Functionality
 
