@@ -37,7 +37,6 @@ function SettingsPage() {
              <h2 className="settings-headings">Change Password</h2>
            </div>
            <div className={"grid-item", "rightalign"}>
-             <h3 className={"settings-select-button"} onClick={ExpandPwd}>CHANGE</h3>
              <div className={str.style}>
              <p>
                <label>Current Password</label>
@@ -52,6 +51,7 @@ function SettingsPage() {
                <input/>
              </p>
              </div>
+           <h3 className={"settings-select-button"} onClick={ExpandPwd}>CHANGE</h3>
            </div>
         </div>
       </div>
