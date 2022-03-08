@@ -1,9 +1,6 @@
 import '../../App.css';
 import TopMenu from '../components/TopMenu';
 
-//var str = "settings-password-hidden";
-var str = { style: "settings-password-visible"};
-
 function SettingsPage() {
   return (
   <div className='App'>
@@ -17,7 +14,11 @@ function SettingsPage() {
              <h2 className="settings-headings">Import Data</h2>
            </div>
            <div className={"grid-item", "rightalign"}>
-             <h3 className={"settings-select-button"}>IMPORT</h3>
+             <input className={"file-upload"} type="file" name="myFile" id="myFile" onChange="updateFileText()"/>
+             <label htmlFor={"myFile"}>
+               <h3 className={"settings-select-button"}>IMPORT</h3>
+             </label>
+             <span className="file-upload_text" id="file-upload_text">No file selected</span>
            </div>
         </div>
       </div>
@@ -37,7 +38,7 @@ function SettingsPage() {
              <h2 className="settings-headings">Change Password</h2>
            </div>
            <div className={"grid-item", "rightalign"}>
-             <div className={str.style}>
+             <div>
              <p>
                <label>Current Password</label>
                <input/>
@@ -51,7 +52,7 @@ function SettingsPage() {
                <input/>
              </p>
              </div>
-           <h3 className={"settings-select-button"} onClick={ExpandPwd}>CHANGE</h3>
+           <h3 className={"settings-select-button"}>CHANGE</h3>
            </div>
         </div>
       </div>
@@ -59,11 +60,14 @@ function SettingsPage() {
 
     </div>
   </div>
+
   );
 }
 
-function ExpandPwd() {
-  str.style = "settings-password-visible";
+function updateFileText() {
+  const text = Document.getElementById(".file-upload_text");
+  text.content = "whoo!";
+  text.title = "whoo!";
 }
 
 export default SettingsPage;

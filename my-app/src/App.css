@@ -219,10 +219,15 @@
   cursor: pointer;
 }
 
-.settings-password-hidden{
-    visibility: hidden
+.file-upload{
+    display: none;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+    width: 300px;
 }
 
-.settings-password-visible{
-    visibility: visible
+.file-upload_text {
+  background-color: white;
+  border-radius: 50px;
 }
