@@ -72,6 +72,7 @@
 .leftalign {
   text-align: left;
   margin-top: auto;
+  margin-bottom: auto;
 }
 
 .rightalign {
@@ -84,6 +85,8 @@
   margin: 0vh;
   padding: 0rem 1rem 0rem 1rem;
   font-size: var(--header-text-size);
+  text-decoration: none;
+  color: var(--font-color);
 }
 
 .TopMenu-button:hover {
@@ -99,7 +102,84 @@
 }
 
 .TopMenu-title-text {
-            text-align: left;
+  text-align: left;
   font-size: var(--header-title-text-size);
   padding: 1rem 1rem 0rem 1rem;
+  color: var(--font-color);
+}
+
+.settings-container {
+  background-color: var(--header-bg-color);
+  border-radius: 5px;
+  margin: 5vh 5vw 5vh 5vw;
+  padding: 3vh 3vw 3vh 3vw;
+  box-shadow: 5px 5px 5px gray;
+}
+
+.settings-title {
+  border-bottom: 2px solid var(--accent-color);
+  color: var(--font-color);
+  margin: 0px;
+  padding:  0vh 2vw 2vh 2vw;
+}
+
+.settings-sub {
+  border-bottom: 1px solid var(--accent-color);
+  margin: 0px;
+  padding: 2vh 20vw 2vh 15vw;
+}
+
+.settings-headings {
+  color: var(--font-color);
+  text-align: left;
+}
+
+.settings-delete-div {
+  margin: 4vh 0vw 1vh 0vw;
+}
+
+.settings-select-button {
+  text-align: right;
+  margin-left: auto;
+  block-size: fit-content;
+  width: fit-content;
+  transition-duration: .4s;
+  padding: 0rem 1rem 0rem 1rem;
+  font-size: var(--header-text-size);
+  text-decoration: none;
+  color: black;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.settings-select-button:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+.settings-delete-button {
+  transition-duration: .4s;
+  margin: 0vh;
+  padding: 0rem 1rem 0rem 1rem;
+  font-size: var(--header-text-size);
+  text-decoration: none;
+  color: black;
+  border: 1px solid gray;
+  background-color: gray;
+  border-radius: 5px;
+}
+
+.settings-delete-button:hover {
+  border: 1px solid red;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+.settings-password-hidden{
+    visibility: hidden
+}
+
+.settings-password-visible{
+    visibility: visible
 }

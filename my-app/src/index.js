@@ -2,13 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import MainPage from './ui/screens/MainPage';
+import LoginPage from './ui/screens/LoginPage';
+import SettingsPage from './ui/screens/SettingsPage';
+import PlannerPage from './ui/screens/PlannerPage';
 import reportWebVitals from './reportWebVitals';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <MainPage />
+    <SettingsPage />
   </React.StrictMode>,
   document.getElementById('root')
 );
