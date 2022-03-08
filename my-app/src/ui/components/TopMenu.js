@@ -1,5 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {Link} from 'react-router-dom';
+import LoginPage from '../screens/LoginPage';
+import SettingsPage from '../screens/SettingsPage';
+import PlannerPage from '../screens/PlannerPage';
 
 class TopMenu extends React.Component {
   render() {
@@ -7,13 +11,13 @@ class TopMenu extends React.Component {
       <div className="TopMenu">
         <div className={"parent", "grid-container"}>
           <div className={"TopMenu-buttongroup", "grid-item", "leftalign"}>
-            <h className={"TopMenu-title-text"}>Moneycation</h>
+            <Link to="/" className={"TopMenu-title-text"}>Moneycation</Link>
           </div>
-          <div className={"TopMenu-buttongroup", "grid-item", "rightalign"}>
-            <a className={"TopMenu-button"} href="/planner">Planner</a>
-            <a className={"TopMenu-button"}  href="/settings">Settings</a>
-            <a className={"TopMenu-button"} href="/login">Login/Signup</a>
-          </div>
+          <nav className={"TopMenu-buttongroup", "grid-item", "rightalign"}>
+            <Link className={"TopMenu-button"} to="/planner">Planner</Link>
+            <Link className={"TopMenu-button"}  to="/settings">Settings</Link>
+            <Link className={"TopMenu-button"} to="/login">Login/Signup</Link>
+          </nav>
         </div>
       </div>
     )

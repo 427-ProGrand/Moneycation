@@ -2,6 +2,7 @@
   --header-bg-color: #4297a0;
   --main-background: #f4eae6;
   --accent-color: #2f5061;
+  --button-color: #4297a0;
   --font-color: #3F383B;
   --header-text-size: 125%;
   --header-title-text-size: 250%;
@@ -103,6 +104,7 @@
 
 .TopMenu-title-text {
   text-align: left;
+  text-decoration: none;
   font-size: var(--header-title-text-size);
   padding: 1rem 1rem 0rem 1rem;
   color: var(--font-color);
@@ -150,6 +152,7 @@
   color: black;
   border: 1px solid gray;
   border-radius: 5px;
+  background-color: var(--button-color);
 }
 
 .settings-select-button:hover {
