@@ -8,6 +8,8 @@ import LoginPage from './ui/screens/LoginPage';
 import SettingsPage from './ui/screens/SettingsPage';
 import PlannerPage from './ui/screens/PlannerPage';
 import reportWebVitals from './reportWebVitals';
+import 'semantic-ui-css/semantic.css'
+import BudgetForm from './ui/screens/BudgetForm';
 
 
 ReactDOM.render(
@@ -17,6 +19,7 @@ ReactDOM.render(
       <Route path="login" element={<LoginPage/>}/>
       <Route path="settings" element={<SettingsPage/>}/>
       <Route path="planner" element={<PlannerPage/>}/>
+      <Route path="budgetForm" element={<BudgetForm/>}/>
       <Route path="*" element={<ErrorPage/>}/>
     </Routes>
   </BrowserRouter>,
