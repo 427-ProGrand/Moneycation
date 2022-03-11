@@ -231,3 +231,13 @@
   background-color: white;
   border-radius: 50px;
 }
+
+.budgetform-container {
+  margin: 5vh 5vw 5vh 5vw;
+}
+
+.budgetform-title{
+  border-bottom: 2px solid var(--accent-color);
+  color: var(--font-color);
+  padding:  0vh 2vw 2vh 2vw;
+}

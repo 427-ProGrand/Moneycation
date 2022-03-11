@@ -7,8 +7,9 @@ import TopMenu from '../components/TopMenu'
 class BudgetForm extends React.Component {
   render() {
     return (
-        <Container>
-          <TopMenu/>
+    <div>
+        <TopMenu/>
+        <Container className="budgetform-container">
           <Grid columns='two' divided>
             <Grid.Row>
               <Grid.Column>
@@ -224,6 +225,7 @@ class BudgetForm extends React.Component {
             </Grid.Row>
           </Grid>
         </Container>
+        </div>
     )
   }
 }
