@@ -241,3 +241,7 @@
   color: var(--font-color);
   padding:  0vh 2vw 2vh 2vw;
 }
+
+.total-income{
+  padding:  0vh 2vw 2vh 2vw;
+}

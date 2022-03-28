@@ -9,20 +9,24 @@ import SettingsPage from './ui/screens/SettingsPage';
 import PlannerPage from './ui/screens/PlannerPage';
 import reportWebVitals from './reportWebVitals';
 import 'semantic-ui-css/semantic.css'
-import BudgetForm from './ui/screens/BudgetForm';
+import AddBudget from './ui/screens/AddBudget';
+import {BudgetsProvider} from '../src/contexts/BudgetsContext';
+
 
 
 ReactDOM.render(
+<BudgetsProvider>
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App/>}/>
       <Route path="login" element={<LoginPage/>}/>
       <Route path="settings" element={<SettingsPage/>}/>
       <Route path="planner" element={<PlannerPage/>}/>
-      <Route path="budgetForm" element={<BudgetForm/>}/>
+      <Route path="budgetForm" element={<AddBudget/>}/>
       <Route path="*" element={<ErrorPage/>}/>
     </Routes>
-  </BrowserRouter>,
+  </BrowserRouter>
+</BudgetsProvider>,
   document.getElementById('root')
 );
 
