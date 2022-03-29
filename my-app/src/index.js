@@ -7,6 +7,7 @@ import ErrorPage from './ui/screens/ErrorPage';
 import LoginPage from './ui/screens/LoginPage';
 import SettingsPage from './ui/screens/SettingsPage';
 import PlannerPage from './ui/screens/PlannerPage';
+import SignupPage from './ui/screens/SignupPage';
 import reportWebVitals from './reportWebVitals';
 import 'semantic-ui-css/semantic.css'
 import AddBudget from './ui/screens/AddBudget';
@@ -20,6 +21,7 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<App/>}/>
       <Route path="login" element={<LoginPage/>}/>
+      <Route path="signUp" element={<SignupPage/>}/>
       <Route path="settings" element={<SettingsPage/>}/>
       <Route path="planner" element={<PlannerPage/>}/>
       <Route path="budgetForm" element={<AddBudget/>}/>

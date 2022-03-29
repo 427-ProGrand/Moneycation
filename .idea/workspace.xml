@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef226a3b-8d04-4844-9e4d-7c6aa3d269fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my-app/src/Util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/contexts/BudgetsContext.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/hooks/useLocalStorage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/ui/components/AddIncome.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/ui/components/BudgetCard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/ui/components/BudgetForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/ui/components/BudgetModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/ui/components/EditModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/ui/screens/AddBudget.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/ui/screens/BudgetForm.js" beforeDir="false" />
-    </list>
+    <list default="true" id="ef226a3b-8d04-4844-9e4d-7c6aa3d269fe" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,6 +67,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Darnell\github\GitHub\darneii\Moneycation\my-app\src\ui\screens" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Katherine\GitHub\piniolk\Moneycation\my-app\src\ui\components" />
       <recent name="C:\Users\Katherine\GitHub\piniolk\Moneycation\my-app\src\ui" />
@@ -128,6 +120,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="masterDetails">
     <states>
