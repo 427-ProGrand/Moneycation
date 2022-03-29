@@ -38,7 +38,7 @@ A web / desktop application for ICS 427 Software Quality Assurance.
 
 - - - -
 
-#### What each team member worked on within the project so far, and what they will be handling next ####
+#### Assignment 2: What each team member worked on within the project so far, and what they will be handling next ####
 
 _Katherine Piniol_
 
@@ -54,3 +54,27 @@ _Darnell Domingo_
 _Karen Wong_
 
 * Planner Page HTML (WIP)
+
+#### Assignment 3: What each team member worked on within the project so far, and what they will be handling next ####
+
+_Katherine Piniol_
+
+* Nav Bar HTML (Complete)
+* Nav Bar Functionality (Complete)
+* Settings Page HTML (Complete)
+* Settings Page Functionality
+
+_Darnell Domingo_
+
+* Login/Signup Page HtML (Complete)
+* Login/Signup Page Functionality 
+
+_Karen Wong_
+
+* New Budget Planner Page HTML (Complete)
+* New Budget Planner Page Functionality
+  * Add Budget (Complete)
+  * Delete Budget (Complete)
+  * Add Income (Complete)
+* View Old Budget Planner (WIP)
+ 
