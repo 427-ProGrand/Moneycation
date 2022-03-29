@@ -31,9 +31,6 @@ A web / desktop application for ICS 427 Software Quality Assurance.
       * Option to edit, add, remove data
       * Option to delete (pop up)
 
-* Page to add new budget sheet [Planner]
-    * Create form 
-
 * Create Budget Sheet component (edited)
 
 
@@ -55,26 +52,28 @@ _Karen Wong_
 
 * Planner Page HTML (WIP)
 
+- - - -
+
 #### Assignment 3: What each team member worked on within the project so far, and what they will be handling next ####
 
-_Katherine Piniol_
+_Katherine Piniol_ (https://github.com/427-ProGrand/Moneycation/tree/piniolk-work)
 
 * Nav Bar HTML (Complete)
 * Nav Bar Functionality (Complete)
 * Settings Page HTML (Complete)
-* Settings Page Functionality
+* Settings Page Functionality (Next)
 
 _Darnell Domingo_
+(https://github.com/427-ProGrand/Moneycation/tree/branch-login) (https://github.com/427-ProGrand/Moneycation/tree/branch-signup)
+* Login/Signup Page HtML (Complete) 
+* Login/Signup Page Functionality (Next)
 
-* Login/Signup Page HtML (Complete)
-* Login/Signup Page Functionality 
-
-_Karen Wong_
+_Karen Wong_ (https://github.com/427-ProGrand/Moneycation/tree/karenwon-budget-form)
 
 * New Budget Planner Page HTML (Complete)
 * New Budget Planner Page Functionality
   * Add Budget (Complete)
   * Delete Budget (Complete)
   * Add Income (Complete)
-* View Old Budget Planner (WIP)
+* View Old Budget Planner (Next)
  
