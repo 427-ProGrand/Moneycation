@@ -7,6 +7,8 @@ A web / desktop application for ICS 427 Software Quality Assurance.
 #### Completed Tasks ####
 
 * Nav Bar Html
+* Page for Sign In / Sign Up [Sign In/Sign Up]
+* Planner HTML
 * Button for import/export data [Settings]
 * Button to delete account [Settings]
 * Button to change password [Settings]
@@ -19,7 +21,6 @@ A web / desktop application for ICS 427 Software Quality Assurance.
 
 * Import functionality to change password
 
-* Page for Sign In / Sign Up [Sign In/Sign Up]
 * Create logic for Sign In / Sign Up
 
 * Menu Bar Drop Down Menu Options
@@ -43,8 +44,7 @@ A web / desktop application for ICS 427 Software Quality Assurance.
 _Katherine Piniol_
 
 * Nav Bar HTML (Complete)
-* Nav Bar Functionality (Complete)
-* Settings Page HTML (Complete)
+* Settings Page HTML (WIP)
 * Settings Page Functionality
 
 _Darnell Domingo_
