@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef226a3b-8d04-4844-9e4d-7c6aa3d269fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my-app/src/Util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/contexts/BudgetsContext.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/hooks/useLocalStorage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/ui/components/AddIncome.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/ui/components/BudgetCard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/ui/components/BudgetForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/ui/components/BudgetModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/ui/components/EditModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/ui/screens/AddBudget.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/ui/screens/BudgetForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +60,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
