@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef226a3b-8d04-4844-9e4d-7c6aa3d269fe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/my-app/src/ui/screens/ChooseForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/ui/screens/ViewBudget.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/contexts/BudgetsContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/contexts/BudgetsContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/ui/components/AddIncome.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/ui/components/AddIncome.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/ui/components/BudgetCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/ui/components/BudgetCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/ui/screens/AddBudget.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/ui/screens/AddBudget.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/ui/screens/PlannerPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/ui/screens/PlannerPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +35,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="353" />
@@ -48,10 +59,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ICS466Planner" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/my-app/src/ui/screens" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
@@ -66,6 +79,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/my-app/src/ui/screens" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Katherine\GitHub\piniolk\Moneycation\my-app\src\ui\components" />
       <recent name="C:\Users\Katherine\GitHub\piniolk\Moneycation\my-app\src\ui" />

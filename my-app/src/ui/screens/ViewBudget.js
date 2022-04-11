@@ -14,9 +14,9 @@ import { useBudgets, useContexts } from "../../contexts/BudgetsContext";
  * Add Budget Function Component
  * Displays Income, buttons to 'Add Income' 'Add Budget'
  * Displays Budget Cards
- * ***TODO: ATTACH DATA TO USER**
+ * ***TODO: ATTACH INCOME TO USER AND DISPLAY**
  */
-function AddBudget() {
+function ViewBudget() {
   const { budgets } = useBudgets()
   const { income } = useBudgets()
   const { addForm } = useBudgets()
@@ -29,15 +29,6 @@ function AddBudget() {
     })
   }
 
-  function findIncome (income) {
-    var totIncome = income;
-    if (income == null){
-      totIncome = 0;
-      console.log("?here")
-    }
-    return totIncome;
-  };
-
 
   return (
       <div>
@@ -49,7 +40,7 @@ function AddBudget() {
                         onChange={date => setSelectedDate(date)}/>
           </Segment>
                 <Segment className="total-income">
-                  <Header>TOTAL: ${findIncome(income[0].amount)}</Header>
+                  <Header>TOTAL: ${income[0].amount}</Header>
                   <Segment.Inline>
                     <IncomeModal/>
                     <BudgetModal/>
@@ -78,4 +69,4 @@ function AddBudget() {
 }
 
 
-export default AddBudget;
+export default ViewBudget;

@@ -10,6 +10,8 @@ import PlannerPage from './ui/screens/PlannerPage';
 import reportWebVitals from './reportWebVitals';
 import 'semantic-ui-css/semantic.css'
 import AddBudget from './ui/screens/AddBudget';
+import ViewBudget from './ui/screens/ViewBudget';
+import ChooseFormPage from './ui/screens/ChooseForm';
 import {BudgetsProvider} from '../src/contexts/BudgetsContext';
 
 
@@ -23,6 +25,8 @@ ReactDOM.render(
       <Route path="settings" element={<SettingsPage/>}/>
       <Route path="planner" element={<PlannerPage/>}/>
       <Route path="budgetForm" element={<AddBudget/>}/>
+      <Route path="viewForm" element={<ViewBudget/>}/>
+      <Route path="viewDates" element={<ChooseFormPage/>}/>
       <Route path="*" element={<ErrorPage/>}/>
     </Routes>
   </BrowserRouter>
