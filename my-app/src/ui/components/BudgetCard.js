@@ -37,7 +37,7 @@ export default function BudgetCard({ name, amount, max }) {
 
 /**
  * Function calculates ratio of budget amount used.
- * Returns the color of the progress bar.
+ * Returns the color of the progress bar.s
  * @param amount
  * @param max
  * @returns {string}
