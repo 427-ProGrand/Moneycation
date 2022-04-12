@@ -1,4 +1,3 @@
-/* eslint-disable */
 import '../../App.css';
 import TopMenu from '../components/TopMenu';
 
