@@ -1,3 +1,4 @@
+/* eslint-disable */
 import '../../App.css';
 import { currencyFormatter } from '../../Util.js';
 import {Icon, Container, Progress, Card, Grid, Form, Segment, Header, Table, Button, Divider} from 'semantic-ui-react';

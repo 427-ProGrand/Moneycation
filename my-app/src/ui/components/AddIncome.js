@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react'
 import { useRef } from "react"
 import {Modal, Icon, Container, Progress, Card, Grid, Form, Segment, Header, Table, Button, Divider} from 'semantic-ui-react';
