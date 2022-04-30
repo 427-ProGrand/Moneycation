@@ -1,7 +1,7 @@
 /* eslint-disable */
 import '../../App.css';
 import TopMenu from '../components/TopMenu'
-import { Form, Header } from 'semantic-ui-react';
+import { Form, Header, Button } from 'semantic-ui-react';
 import React, { useRef } from 'react';
 import { useAccounts } from '../../contexts/AccountsContext';
 
@@ -37,20 +37,18 @@ function LoginPage() {
     <div className="login-username">
 
       <Form onSubmit={handleSubmit}>
-        <div className="signUp-username">
-          <Form.Field required>
+          <Form.Field className="signUp-username" required>
             <label><h3>Username</h3></label>
-            <input ref={usernameRef} placeholder="Username..."/>
+            <input ref={usernameRef} className="w60" placeholder="Username..."/>
           </Form.Field>
-        </div>
         <div className="signUp-password">
           <Form.Field required>
             <label><h3>Password</h3></label>
             <input ref={passwordRef} placeholder="Password..."/>
           </Form.Field>
         </div>
-        <div className="signUp-button" >
-          <Form.Button  content='Submit'/>
+        <div >
+          <Button className="signUp-button" content='Submit'/>
         </div>
       </Form>
 
@@ -58,7 +56,7 @@ function LoginPage() {
         <Header color="red" content={errTxt}/>
       </div>
 
-      <div className="login-new-account">Need an account? <a href="/signup">Click here</a></div>
+      <div className="login-new-account">Need an account? <a className="whitetext" href="/signup">Click here</a></div>
 
     </div>
   </div>

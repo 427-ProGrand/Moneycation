@@ -8,6 +8,7 @@
   --header-title-text-size: 250%;
 }
 
+
 .App {
   text-align: center;
   background-color: var(--main-background);
@@ -79,6 +80,10 @@
 .rightalign {
   text-align: right;
   margin-top: auto;
+}
+
+.whitetext {
+  color: white;
 }
 
 .errorpage_404text {
@@ -180,7 +185,7 @@
   margin: 4vh 0vw 1vh 0vw;
 }
 
-.settings-select-button {
+.ui.button.settings-select-button {
   text-align: right;
   margin-left: auto;
   block-size: fit-content;
@@ -195,7 +200,7 @@
   background-color: var(--button-color);
 }
 
-.settings-select-button:hover {
+.ui.button.settings-select-button:hover {
   background-color: var(--accent-color);
   cursor: pointer;
 }
@@ -309,7 +314,7 @@
   margin-bottom: 5px;
 }
 
-.signUp-button {
+.ui.button.signUp-button {
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
@@ -322,7 +327,7 @@
   margin-bottom: 5px;
 }
 
-.signUp-button:hover {
+.ui.button.signUp-button:hover {
   background-color: var(--accent-color);
   cursor: pointer;
 }

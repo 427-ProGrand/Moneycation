@@ -28,7 +28,7 @@ export const AccountsProvider = ({ children }) => {
     const check = localStorage.getItem("accounts");
     console.log(check);
     console.log(check[0]);
-    if (check == null || check == "[]"){
+    if ((check == null || check == "[]")& pwCheck(password)){
       console.log("Account successfully added!");
       setAccounts(prevAccounts => {
         return [{ id: uuidV4(), email, username, password }]
@@ -45,7 +45,7 @@ export const AccountsProvider = ({ children }) => {
     console.log(accounts);
     console.log(account);
     // save account
-    if(currentPassword == account.password && newPassword == newPasswordC) {
+    if(currentPassword == account.password && newPassword == newPasswordC && pwCheck(newPassword)) {
       account.password = newPassword;
       const newA = [account];
       setAccounts(newA);
@@ -75,6 +75,14 @@ export const AccountsProvider = ({ children }) => {
     }
   }
 
+  function pwCheck(password){
+    if(password.length > 7){
+      return true;
+    } else {
+      return false;
+    }
+  }
+
 
   return (
     <AccountsContext.Provider
@@ -82,6 +90,7 @@ export const AccountsProvider = ({ children }) => {
         accounts,
         forms,
         checkAccount,
+        pwCheck,
         addAccount,
         addForm,
         editPassword,

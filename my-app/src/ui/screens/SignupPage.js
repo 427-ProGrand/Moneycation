@@ -16,7 +16,7 @@ function SignupPage() {
 
   function setTxt(bool) {
     if(bool == false){
-      setErrTxt("Error! An account has already been made!")
+      setErrTxt("Error! An account has already been made or your password is invalid!")
     } else {
       setErrTxt("Successful signup!");
     }
@@ -52,12 +52,12 @@ function SignupPage() {
           </div>
           <div className="signUp-password">
             <Form.Field required>
-              <label><h3>Password</h3></label>
+              <label><h3>Password (must be at least 8 characters)</h3></label>
               <input ref={passwordRef} placeholder="Password..."/>
             </Form.Field>
           </div>
-          <div className="signUp-button" >
-            <Form.Button  content='Submit'/>
+          <div  >
+            <Button className="signUp-button" content='Submit'/>
           </div>
         </Form>
         </div>
@@ -66,7 +66,7 @@ function SignupPage() {
           <Header color="red" content={errTxt}/>
         </div>
 
-        <div className="login-new-account">Already have an account? <a href="/login">Click here</a></div>
+        <div className="login-new-account">Already have an account? <a className="whitetext" href="/login">Click here</a></div>
       </div>
     </div>
   );

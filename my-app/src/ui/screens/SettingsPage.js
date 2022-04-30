@@ -17,7 +17,7 @@ function SettingsPage() {
 
   function setTxt(bool) {
     if(bool == false){
-      setErrTxt("Error! Either current or new password is incorrect!")
+      setErrTxt("Error! Either current or new password is invalid!")
     } else {
       setErrTxt("Password successfully changed!");
       window.location = '/settings';
@@ -60,7 +60,7 @@ function SettingsPage() {
                  </div>
                  <div className="signUp-password">
                    <Form.Field required>
-                     <label><h3>New Password</h3></label>
+                     <label><h3>New Password (must be at least 8 characters)</h3></label>
                      <input ref={nPasswordRef} placeholder="New Password..."/>
                    </Form.Field>
                  </div>
@@ -70,8 +70,8 @@ function SettingsPage() {
                      <input ref={nCPasswordRef} placeholder="Confirm Password..."/>
                    </Form.Field>
                  </div>
-                 <div className={"settings-select-button"}>
-                   <Form.Button content='CHANGE'/>
+                 <div >
+                   <Button className={"settings-select-button"} content='CHANGE'/>
                  </div>
                </Form>
                <div>

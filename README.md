@@ -18,7 +18,6 @@ A web / desktop application for ICS 427 Software Quality Assurance.
 
 #### Pending Tasks ####
 
-
 * Login specific pages
 
 * Menu Bar Drop Down Menu Options
