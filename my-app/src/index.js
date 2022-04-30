@@ -6,6 +6,7 @@ import './index.css';
 import App from './App';
 import ErrorPage from './ui/screens/ErrorPage';
 import LoginPage from './ui/screens/LoginPage';
+import SignupPage from './ui/screens/SignupPage';
 import SettingsPage from './ui/screens/SettingsPage';
 import PlannerPage from './ui/screens/PlannerPage';
 import reportWebVitals from './reportWebVitals';
@@ -14,15 +15,19 @@ import AddBudget from './ui/screens/AddBudget';
 import ViewBudget from './ui/screens/ViewBudget';
 import ChooseFormPage from './ui/screens/ChooseForm';
 import {BudgetsProvider} from '../src/contexts/BudgetsContext';
+import {AccountsProvider} from '../src/contexts/AccountsContext';
 
 
 
 ReactDOM.render(
+
+<AccountsProvider>
 <BudgetsProvider>
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App/>}/>
       <Route path="login" element={<LoginPage/>}/>
+      <Route path="signup" element={<SignupPage/>}/>
       <Route path="settings" element={<SettingsPage/>}/>
       <Route path="planner" element={<PlannerPage/>}/>
       <Route path="budgetForm" element={<AddBudget/>}/>
@@ -31,7 +36,8 @@ ReactDOM.render(
       <Route path="*" element={<ErrorPage/>}/>
     </Routes>
   </BrowserRouter>
-</BudgetsProvider>,
+</BudgetsProvider>
+</AccountsProvider>,
   document.getElementById('root')
 );
 

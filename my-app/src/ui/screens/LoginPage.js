@@ -25,7 +25,7 @@ function LoginPage() {
       </p>
     </div>
     <div className="login-button" >Login</div>
-    <div className="login-new-account">Need an account? <a href="">Click here</a></div>
+    <div className="login-new-account">Need an account? <a href="/signup">Click here</a></div>
   </div>
   </div>
   );
