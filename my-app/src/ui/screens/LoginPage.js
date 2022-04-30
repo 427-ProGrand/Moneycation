@@ -1,31 +1,51 @@
 /* eslint-disable */
 import '../../App.css';
 import TopMenu from '../components/TopMenu'
+import { Form } from 'semantic-ui-react';
+import React, { useRef } from 'react';
+import { useAccounts } from '../../contexts/AccountsContext';
 
-function LoginPage() {
+function LoginPage() {  const emailRef = useRef()
+  const usernameRef = useRef()
+  const passwordRef = useRef()
+  const { checkAccount } = useAccounts()
+
+  function handleSubmit (e) {
+    e.preventDefault();
+    checkAccount({
+      username: usernameRef.current.value,
+      password: passwordRef.current.value,
+    })
+  };
+
   return (
   <div className='App'>
     <TopMenu />
      <div className="login-container">
     <h1 className="login-title">Login</h1>
     <div className="login-username">
-      <p>
-        <h3>Username</h3>
-      </p>
-      <p>
-        <input placeholder="Username..."/>
-      </p>
+
+      <Form onSubmit={handleSubmit}>
+        <div className="signUp-username">
+          <Form.Field required>
+            <label><h3>Username</h3></label>
+            <input ref={usernameRef} placeholder="Username..."/>
+          </Form.Field>
+        </div>
+        <div className="signUp-password">
+          <Form.Field required>
+            <label><h3>Password</h3></label>
+            <input ref={passwordRef} placeholder="Password..."/>
+          </Form.Field>
+        </div>
+        <div className="signUp-button" >
+          <Form.Button  content='Submit'/>
+        </div>
+      </Form>
+
+      <div className="login-new-account">Need an account? <a href="/signup">Click here</a></div>
+
     </div>
-    <div className="login-password">
-      <p>
-        <h3>Password</h3>
-      </p>
-      <p>
-        <input placeholder="Password..."/>
-      </p>
-    </div>
-    <div className="login-button" >Login</div>
-    <div className="login-new-account">Need an account? <a href="/signup">Click here</a></div>
   </div>
   </div>
   );

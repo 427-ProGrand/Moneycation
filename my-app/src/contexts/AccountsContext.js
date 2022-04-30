@@ -15,7 +15,6 @@ export const AccountsProvider = ({ children }) => {
   const [forms, setForms] = useLocalStorage("forms", [])
 
 
-
   function addForm({ date, accounts }) {
     console.log(date);
     console.log(accounts);
@@ -26,13 +25,16 @@ export const AccountsProvider = ({ children }) => {
   }
 
   function addAccount({ email, username, password }) {
-    setAccounts(prevAccounts => {
-      if (prevAccounts.find(accounts => accounts.email === email)) {
-        return [{ id: uuidV4(),  email, username, password }]
-      }
-      return [...prevAccounts, { id: uuidV4(), email, username, password }]
-    })
-  }
+    const check = localStorage.getItem("accounts");
+    if (check) { // if there's already an account, you can't make a new one
+      console.log("Error! There's already an account made.");
+      return false;
+    } else {
+      console.log("Account successfully added!");
+      setAccounts(prevAccounts => {
+        return [{ id: uuidV4(), email, username, password }]
+      })
+    }}
 
   function editAccount({ id, email, username, password }) {
     setAccounts(prevAccounts => {
@@ -49,11 +51,25 @@ export const AccountsProvider = ({ children }) => {
     })
   }
 
+  function checkAccount({id, username, password}){
+      setAccounts(prevAccounts => {
+      if (prevAccounts.find(account => account.username === username && account.password == password)) {
+        console.log("Correct log in");
+        return true
+      } else {
+        console.log("Username and/or password does not match!");
+        return false
+      }
+    })
+    }
+
+
   return (
     <AccountsContext.Provider
       value={{
         accounts,
         forms,
+        checkAccount,
         addAccount,
         addForm,
         editAccount,
