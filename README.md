@@ -12,16 +12,15 @@ A web / desktop application for ICS 427 Software Quality Assurance.
 * Button for import/export data [Settings]
 * Button to delete account [Settings]
 * Button to change password [Settings]
+* Create logic for Sign In / Sign Up
 
 #### Pending Tasks ####
-
-* Import functionality for import/export data
 
 * Import functionality for deleting account
 
 * Import functionality to change password
 
-* Create logic for Sign In / Sign Up
+* Login specific pages
 
 * Menu Bar Drop Down Menu Options
   * [Planner] : [View Old Sheets] [Add New Sheet]
@@ -105,3 +104,30 @@ _Karen Wong_ (https://github.com/427-ProGrand/Moneycation/tree/karenwon-budget-f
   * Preview Old Sheets Functionality (WIP)
 * ESLint Config (Complete)
  
+- - - -
+
+#### Assignment 5: What each team member worked on within the project so far. ####
+
+_Katherine Piniol_ (https://github.com/427-ProGrand/Moneycation/tree/piniolk-work)
+
+* Nav Bar HTML (Complete)
+* Nav Bar Functionality (Complete)
+* Settings Page HTML (Complete)
+* Login/Signup Functionality
+* Settings Page Functionality (Next)
+
+_Darnell Domingo_
+(https://github.com/427-ProGrand/Moneycation/tree/branch-login) (https://github.com/427-ProGrand/Moneycation/tree/branch-signup)
+* Login/Signup Page HtML (Complete) 
+
+_Karen Wong_ (https://github.com/427-ProGrand/Moneycation/tree/karenwon-budget-form) (https://github.com/427-ProGrand/Moneycation/tree/karenwon-view-budget)
+
+* New Budget Planner Page HTML (Complete)
+* New Budget Planner Page Functionality
+  * Add Budget (Complete)
+  * Delete Budget (Complete)
+  * Add Income (Complete)
+* View Old Budget Planner (Next)
+  * Date Selector (Complete)
+  * Preview Old Sheets Functionality (WIP)
+* ESLint Config (Complete)

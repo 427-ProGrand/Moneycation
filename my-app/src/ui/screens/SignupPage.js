@@ -5,6 +5,7 @@ import { useRef } from 'react';
 import { useAccounts } from '../../contexts/AccountsContext';
 import React from 'react';
 import { Form, Button, Header } from 'semantic-ui-react';
+import { Redirect } from 'react-router';
 
 function SignupPage() {
   const [errTxt, setErrTxt] = React.useState(false)
@@ -16,6 +17,8 @@ function SignupPage() {
   function setTxt(bool) {
     if(bool == false){
       setErrTxt("Error! An account has already been made!")
+    } else {
+      setErrTxt("Successful signup!");
     }
   }
 
