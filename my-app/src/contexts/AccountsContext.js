@@ -26,14 +26,16 @@ export const AccountsProvider = ({ children }) => {
 
   function addAccount({ email, username, password }) {
     const check = localStorage.getItem("accounts");
-    if (check) { // if there's already an account, you can't make a new one
-      console.log("Error! There's already an account made.");
-      return false;
-    } else {
+    console.log(check);
+    console.log(check[0]);
+    if (check == null || check == "[]"){
       console.log("Account successfully added!");
       setAccounts(prevAccounts => {
         return [{ id: uuidV4(), email, username, password }]
       })
+    } else { // if there's already an account, you can't make a new one
+      console.log("Error! There's already an account made.");
+      return false;
     }}
 
   function editPassword({ currentPassword, newPassword, newPasswordC }) {

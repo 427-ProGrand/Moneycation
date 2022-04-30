@@ -20,6 +20,7 @@ function SettingsPage() {
       setErrTxt("Error! Either current or new password is incorrect!")
     } else {
       setErrTxt("Password successfully changed!");
+      window.location = '/settings';
     }
   }
 
@@ -30,7 +31,6 @@ function SettingsPage() {
       newPassword: nPasswordRef.current.value,
       newPasswordC: nCPasswordRef.current.value,
     }))
-    window.location = '/settings';
   };
 
   function handleDeleteAcc (e) {
