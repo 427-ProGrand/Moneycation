@@ -4,7 +4,7 @@ import TopMenu from '../components/TopMenu';
 import { useAccounts } from '../../contexts/AccountsContext';
 import { useRef } from 'react';
 import React from 'react';
-import { Form, Header } from 'semantic-ui-react';
+import { Form, Header, Button } from 'semantic-ui-react';
 
 function SettingsPage() {
 
@@ -12,7 +12,7 @@ function SettingsPage() {
   const cPasswordRef = useRef()
   const nPasswordRef = useRef()
   const nCPasswordRef = useRef()
-  const { editPassword } = useAccounts()
+  const { editPassword, deleteAccount } = useAccounts()
 
 
   function setTxt(bool) {
@@ -30,8 +30,13 @@ function SettingsPage() {
       newPassword: nPasswordRef.current.value,
       newPasswordC: nCPasswordRef.current.value,
     }))
+    window.location = '/settings';
   };
 
+  function handleDeleteAcc (e) {
+    e.preventDefault();
+    deleteAccount();
+  }
 
   return (
   <div className='App'>
@@ -77,7 +82,7 @@ function SettingsPage() {
         </div>
       </div>
 
-      <div className="settings-delete-div"><a className="settings-delete-button">Delete Account</a></div>
+      <div className="settings-delete-div"><a className="settings-delete-button" onClick={handleDeleteAcc}>Delete Account</a></div>
 
     </div>
   </div>

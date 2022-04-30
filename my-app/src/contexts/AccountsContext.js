@@ -54,10 +54,12 @@ export const AccountsProvider = ({ children }) => {
     }
   }
 
-  function deleteAccount({ id }) {
-    setAccounts(prevAccounts => {
-      return prevAccounts.filter(account => account.id !== id)
-    })
+  function deleteAccount() {
+    const allaccounts = JSON.parse(localStorage.getItem("accounts"));
+    const account = allaccounts[0];
+    console.log("delete");
+    localStorage.clear();
+    window.location = '/';
   }
 
   function checkAccount({id, username, password}) {
