@@ -13,12 +13,11 @@ A web / desktop application for ICS 427 Software Quality Assurance.
 * Button to delete account [Settings]
 * Button to change password [Settings]
 * Create logic for Sign In / Sign Up
+* Import functionality for deleting account [Settings]
+* Import functionality to change password [Settings]
 
 #### Pending Tasks ####
 
-* Import functionality for deleting account
-
-* Import functionality to change password
 
 * Login specific pages
 
@@ -31,6 +30,8 @@ A web / desktop application for ICS 427 Software Quality Assurance.
       * Option to delete (pop up)
 
 * Create Budget Sheet component (edited)
+
+* Website Design
 
 
 - - - -
@@ -113,8 +114,8 @@ _Katherine Piniol_ (https://github.com/427-ProGrand/Moneycation/tree/piniolk-wor
 * Nav Bar HTML (Complete)
 * Nav Bar Functionality (Complete)
 * Settings Page HTML (Complete)
-* Login/Signup Functionality
-* Settings Page Functionality (Next)
+* Login/Signup Functionality (Complete)
+* Settings Page Functionality (Complete)
 
 _Darnell Domingo_
 (https://github.com/427-ProGrand/Moneycation/tree/branch-login) (https://github.com/427-ProGrand/Moneycation/tree/branch-signup)
