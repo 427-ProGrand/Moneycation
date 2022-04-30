@@ -4,22 +4,28 @@ import TopMenu from '../components/TopMenu';
 import { useRef } from 'react';
 import { useAccounts } from '../../contexts/AccountsContext';
 import React from 'react';
-import { Form } from 'semantic-ui-react';
-import { Modal } from 'semantic-ui-react/dist/commonjs/modules/Modal';
+import { Form, Button, Header } from 'semantic-ui-react';
 
 function SignupPage() {
+  const [errTxt, setErrTxt] = React.useState(false)
   const emailRef = useRef()
   const usernameRef = useRef()
   const passwordRef = useRef()
   const { addAccount } = useAccounts()
 
+  function setTxt(bool) {
+    if(bool == false){
+      setErrTxt("Error! An account has already been made!")
+    }
+  }
+
    function handleSubmit (e) {
      e.preventDefault();
-     addAccount({
+     setTxt(addAccount({
        email: emailRef.current.value,
        username: usernameRef.current.value,
        password: passwordRef.current.value,
-     })
+     }))
    };
 
   return (
@@ -52,6 +58,12 @@ function SignupPage() {
           </div>
         </Form>
         </div>
+
+        <div>
+          <Header color="red" content={errTxt}/>
+        </div>
+
+        <div className="login-new-account">Already have an account? <a href="/login">Click here</a></div>
       </div>
     </div>
   );

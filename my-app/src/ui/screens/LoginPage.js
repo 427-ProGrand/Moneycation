@@ -1,21 +1,31 @@
 /* eslint-disable */
 import '../../App.css';
 import TopMenu from '../components/TopMenu'
-import { Form } from 'semantic-ui-react';
+import { Form, Header } from 'semantic-ui-react';
 import React, { useRef } from 'react';
 import { useAccounts } from '../../contexts/AccountsContext';
 
 function LoginPage() {  const emailRef = useRef()
+  const [errTxt, setErrTxt] = React.useState(false)
   const usernameRef = useRef()
   const passwordRef = useRef()
   const { checkAccount } = useAccounts()
 
+
+  function setTxt(bool) {
+    if(bool == false){
+      setErrTxt("Error! Username/Password is incorrect!")
+    } else {
+      setErrTxt("You've been logged in");
+    }
+  }
+
   function handleSubmit (e) {
     e.preventDefault();
-    checkAccount({
+    setTxt(checkAccount({
       username: usernameRef.current.value,
       password: passwordRef.current.value,
-    })
+    }))
   };
 
   return (
@@ -42,6 +52,10 @@ function LoginPage() {  const emailRef = useRef()
           <Form.Button  content='Submit'/>
         </div>
       </Form>
+
+      <div>
+        <Header color="red" content={errTxt}/>
+      </div>
 
       <div className="login-new-account">Need an account? <a href="/signup">Click here</a></div>
 

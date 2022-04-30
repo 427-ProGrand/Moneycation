@@ -51,9 +51,20 @@ export const AccountsProvider = ({ children }) => {
     })
   }
 
-  function checkAccount({id, username, password}){
+  function checkAccount({id, username, password}) {
+      const allaccounts = JSON.parse(localStorage.getItem("accounts"));
+      const account = allaccounts[0];
+
+
+    if(account.username == username && account.password == password){
+      return true;
+    } else {
+      return false;
+    }
+  }
+    /*
       setAccounts(prevAccounts => {
-      if (prevAccounts.find(account => account.username === username && account.password == password)) {
+      if (localStorage.getItem("accounts").then(account => account.username === username && account.password == password)) {
         console.log("Correct log in");
         return true
       } else {
@@ -61,7 +72,13 @@ export const AccountsProvider = ({ children }) => {
         return false
       }
     })
-    }
+console.log(localStorage.getItem("accounts"));
+      if(localStorage.getItem("accounts")[0].username == username && localStorage.getItem("accounts")[0].password == password){
+        return true;
+      } else {
+        return false;
+      }
+    }*/
 
 
   return (
