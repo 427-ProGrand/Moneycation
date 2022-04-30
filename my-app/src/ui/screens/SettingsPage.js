@@ -1,8 +1,38 @@
 /* eslint-disable */
 import '../../App.css';
 import TopMenu from '../components/TopMenu';
+import { useAccounts } from '../../contexts/AccountsContext';
+import { useRef } from 'react';
+import React from 'react';
+import { Form, Header } from 'semantic-ui-react';
 
 function SettingsPage() {
+
+  const [errTxt, setErrTxt] = React.useState(false)
+  const cPasswordRef = useRef()
+  const nPasswordRef = useRef()
+  const nCPasswordRef = useRef()
+  const { editPassword } = useAccounts()
+
+
+  function setTxt(bool) {
+    if(bool == false){
+      setErrTxt("Error! Either current or new password is incorrect!")
+    } else {
+      setErrTxt("Password successfully changed!");
+    }
+  }
+
+  function handlePasswordSubmit (e) {
+    e.preventDefault();
+    setTxt(editPassword({
+      currentPassword: cPasswordRef.current.value,
+      newPassword: nPasswordRef.current.value,
+      newPasswordC: nCPasswordRef.current.value,
+    }))
+  };
+
+
   return (
   <div className='App'>
     <TopMenu />
@@ -16,20 +46,33 @@ function SettingsPage() {
            </div>
            <div className={"grid-item", "rightalign"}>
              <div>
-             <p>
-               <label>Current Password</label>
-               <input/>
-             </p>
-             <p>
-               <label>New Password</label>
-               <input/>
-             </p>
-             <p>
-               <label>Confirm New Password</label>
-               <input/>
-             </p>
+               <Form onSubmit={handlePasswordSubmit}>
+                 <div className="signUp-username">
+                   <Form.Field required>
+                     <label><h3>Current Password</h3></label>
+                     <input ref={cPasswordRef} placeholder="Current Password..."/>
+                   </Form.Field>
+                 </div>
+                 <div className="signUp-password">
+                   <Form.Field required>
+                     <label><h3>New Password</h3></label>
+                     <input ref={nPasswordRef} placeholder="New Password..."/>
+                   </Form.Field>
+                 </div>
+                 <div className="signUp-password">
+                   <Form.Field required>
+                     <label><h3>Confirm Password</h3></label>
+                     <input ref={nCPasswordRef} placeholder="Confirm Password..."/>
+                   </Form.Field>
+                 </div>
+                 <div className={"settings-select-button"}>
+                   <Form.Button content='CHANGE'/>
+                 </div>
+               </Form>
+               <div>
+                 <Header color="red" content={errTxt}/>
+               </div>
              </div>
-           <h3 className={"settings-select-button"}>CHANGE</h3>
            </div>
         </div>
       </div>

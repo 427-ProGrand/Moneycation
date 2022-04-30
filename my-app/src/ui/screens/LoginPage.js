@@ -5,7 +5,8 @@ import { Form, Header } from 'semantic-ui-react';
 import React, { useRef } from 'react';
 import { useAccounts } from '../../contexts/AccountsContext';
 
-function LoginPage() {  const emailRef = useRef()
+function LoginPage() {
+  const emailRef = useRef()
   const [errTxt, setErrTxt] = React.useState(false)
   const usernameRef = useRef()
   const passwordRef = useRef()

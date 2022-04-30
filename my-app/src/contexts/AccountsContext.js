@@ -36,13 +36,22 @@ export const AccountsProvider = ({ children }) => {
       })
     }}
 
-  function editAccount({ id, email, username, password }) {
-    setAccounts(prevAccounts => {
-      if (prevAccounts.find(account => account.email === email)) {
-        return prevAccounts
-      }
-      return [...prevAccounts, { id, email, username, password }]
-    })
+  function editPassword({ currentPassword, newPassword, newPasswordC }) {
+    // get account
+    const allaccounts = JSON.parse(localStorage.getItem("accounts"));
+    const account = allaccounts[0];
+    console.log(accounts);
+    console.log(account);
+    // save account
+    if(currentPassword == account.password && newPassword == newPasswordC) {
+      account.password = newPassword;
+      const newA = [account];
+      setAccounts(newA);
+      return true;
+    } else {
+      console.log("it's wrong")
+      return false;
+    }
   }
 
   function deleteAccount({ id }) {
@@ -52,33 +61,15 @@ export const AccountsProvider = ({ children }) => {
   }
 
   function checkAccount({id, username, password}) {
-      const allaccounts = JSON.parse(localStorage.getItem("accounts"));
-      const account = allaccounts[0];
+    const allaccounts = JSON.parse(localStorage.getItem("accounts"));
+    const account = allaccounts[0];
 
-
-    if(account.username == username && account.password == password){
+    if (account.username == username && account.password == password) {
       return true;
     } else {
       return false;
     }
   }
-    /*
-      setAccounts(prevAccounts => {
-      if (localStorage.getItem("accounts").then(account => account.username === username && account.password == password)) {
-        console.log("Correct log in");
-        return true
-      } else {
-        console.log("Username and/or password does not match!");
-        return false
-      }
-    })
-console.log(localStorage.getItem("accounts"));
-      if(localStorage.getItem("accounts")[0].username == username && localStorage.getItem("accounts")[0].password == password){
-        return true;
-      } else {
-        return false;
-      }
-    }*/
 
 
   return (
@@ -89,7 +80,7 @@ console.log(localStorage.getItem("accounts"));
         checkAccount,
         addAccount,
         addForm,
-        editAccount,
+        editPassword,
         deleteAccount,
       }}
     >
