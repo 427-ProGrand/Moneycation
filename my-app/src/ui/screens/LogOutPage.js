@@ -7,6 +7,7 @@ import TopMenu from '../components/TopMenu';
 function LogOutPage() {
   const handleClick = () => {
     localStorage.setItem('isAuthenticated', '');
+    window.location = '/';
   };
 
   return (

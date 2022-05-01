@@ -29,6 +29,7 @@ function SignupPage() {
        username: usernameRef.current.value,
        password: passwordRef.current.value,
      }))
+     window.location = '/planner';
    };
 
   return (
