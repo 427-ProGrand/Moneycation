@@ -18,6 +18,7 @@ function LoginPage() {
       setErrTxt("Error! Username/Password is incorrect!")
     } else {
       setErrTxt("You've been logged in");
+      window.location = '/planner';
     }
   }
 

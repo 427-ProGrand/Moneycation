@@ -19,6 +19,7 @@ function SignupPage() {
       setErrTxt("Error! An account has already been made or your password is invalid!")
     } else {
       setErrTxt("Successful signup!");
+      window.location = '/planner';
     }
   }
 
@@ -29,7 +30,6 @@ function SignupPage() {
        username: usernameRef.current.value,
        password: passwordRef.current.value,
      }))
-     window.location = '/planner';
    };
 
   return (

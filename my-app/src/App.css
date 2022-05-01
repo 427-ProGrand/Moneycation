@@ -205,7 +205,7 @@
   cursor: pointer;
 }
 
-.settings-delete-button {
+.ui.button.settings-delete-button {
   transition-duration: .4s;
   margin: 0vh;
   padding: 0rem 1rem 0rem 1rem;
@@ -217,7 +217,7 @@
   border-radius: 5px;
 }
 
-.settings-delete-button:hover {
+.ui.button.settings-delete-button:hover {
   border: 1px solid red;
   background-color: red;
   color: white;
