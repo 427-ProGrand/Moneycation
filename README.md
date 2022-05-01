@@ -15,6 +15,7 @@ A web / desktop application for ICS 427 Software Quality Assurance.
 * Create logic for Sign In / Sign Up
 * Import functionality for deleting account [Settings]
 * Import functionality to change password [Settings]
+* Editing functionality for budget
 
 #### Pending Tasks ####
 
@@ -115,6 +116,7 @@ _Katherine Piniol_ (https://github.com/427-ProGrand/Moneycation/tree/piniolk-wor
 * Settings Page HTML (Complete)
 * Login/Signup Functionality (Complete)
 * Settings Page Functionality (Complete)
+* Editing functionality for budget
 
 _Darnell Domingo_
 (https://github.com/427-ProGrand/Moneycation/tree/branch-login) (https://github.com/427-ProGrand/Moneycation/tree/branch-signup)
