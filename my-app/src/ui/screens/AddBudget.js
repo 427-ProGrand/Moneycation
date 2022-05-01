@@ -61,6 +61,7 @@ function AddBudget() {
             return (
                 <BudgetCard
                     key={budget.id}
+                    id={budget.id}
                     name={budget.name}
                     amount={budget.amount}
                     max={budget.max}

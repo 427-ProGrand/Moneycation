@@ -13,7 +13,7 @@ import { useBudgets } from "../../contexts/BudgetsContext";
  * @param amount
  * @param max
  */
-export default function BudgetCard({ name, amount, max }) {
+export default function BudgetCard({ id, name, amount, max }) {
   const { budgets, deleteBudget } = useBudgets()
 
   const budget = budgets.find(b => b.id)
@@ -30,7 +30,7 @@ export default function BudgetCard({ name, amount, max }) {
           <Button icon onClick={() => {deleteBudget(budget)}}>
             <Icon name='trash' />
           </Button>
-          <EditModal budgetId={budget}/>
+          <EditModal budgetId={id}/>
         </Card.Content>
       </Card>
   )

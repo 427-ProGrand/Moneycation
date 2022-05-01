@@ -31,6 +31,12 @@ export const BudgetsProvider = ({ children }) => {
     })
   }
 
+  function getBudget(id) {
+    const allbudgets = JSON.parse(localStorage.getItem("budgets"));
+    const cbudget = allbudgets.find(b => b.id === id);
+    return cbudget;
+  }
+
   function addBudget({ name, amount, max }) {
     setBudgets(prevBudgets => {
       if (prevBudgets.find(budgets => budgets.name === name)) {
@@ -41,12 +47,12 @@ export const BudgetsProvider = ({ children }) => {
   }
 
   function editBudget({ id, name, amount, max }) {
-    setBudgets(prevBudgets => {
-      if (prevBudgets.find(budget => budget.name === name)) {
-        return prevBudgets
-      }
-      return [...prevBudgets, { id, name, amount, max }]
-    })
+    console.log(budgets)
+    budgets.map(b => {if(b.id === id) {b.name = name; b.amount = amount; b.max = max; console.log(b);}})
+    console.log(budgets)
+    setBudgets(budgets);
+    localStorage.setItem("budgets", JSON.stringify(budgets))
+    window.location = '/budgetForm';
   }
 
   function deleteBudget({ id }) {
@@ -64,6 +70,7 @@ export const BudgetsProvider = ({ children }) => {
             addBudget,
             addForm,
             addIncome,
+            getBudget,
             editBudget,
             deleteBudget,
           }}
