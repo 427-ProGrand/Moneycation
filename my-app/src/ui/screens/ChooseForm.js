@@ -26,6 +26,7 @@ function ChooseFormPage() {
   <div className="budgetform-container">
     <h1 className="budgetform-title">Planner</h1>
     <Select placeholder='Select your Date'
+            value={selectedOption}
             getOptionValue={option => option.date}
             getOptionLabel={option => option.date}
             options={datesList}

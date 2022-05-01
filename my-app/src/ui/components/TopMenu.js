@@ -13,6 +13,9 @@ class TopMenu extends React.Component {
             <Link className={"TopMenu-button"} to="/planner">Planner</Link>
             <Link className={"TopMenu-button"}  to="/settings">Settings</Link>
             <Link className={"TopMenu-button"} to="/login">Login/Signup</Link>
+            {(localStorage.getItem("isAuthenticated", "true")) ? (
+              [<Link className={"TopMenu-button"} to="/logout">Logout</Link> ]
+            ) : ''}
           </nav>
         </div>
       </div>

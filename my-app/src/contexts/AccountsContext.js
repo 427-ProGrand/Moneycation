@@ -56,8 +56,8 @@ export const AccountsProvider = ({ children }) => {
     const allaccounts = JSON.parse(localStorage.getItem("accounts"));
     const account = allaccounts[0];
 
-
     if(account.username == username && account.password == password){
+      localStorage.setItem("isAuthenticated", "true");
       return true;
     } else {
       return false;

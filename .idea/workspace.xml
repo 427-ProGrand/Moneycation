@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef226a3b-8d04-4844-9e4d-7c6aa3d269fe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/ui/screens/LogOutPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/.eslintrc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/contexts/AccountsContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/contexts/AccountsContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/ui/components/TopMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/ui/components/TopMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/ui/screens/AddBudget.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/ui/screens/AddBudget.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/ui/screens/ChooseForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/ui/screens/ChooseForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/ui/screens/PlannerPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/ui/screens/PlannerPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +174,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="16" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ICS466Planner" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/my-app/src/ui/screens" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
@@ -190,12 +190,13 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/my-app/src/ui/screens" />
+      <recent name="C:\Users\Darnell\github\GitHub\darneii\Moneycation\my-app\src\ui\screens" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Katherine\GitHub\piniolk\Moneycation\my-app\src\ui\components" />
       <recent name="C:\Users\Katherine\GitHub\piniolk\Moneycation\my-app\src\ui" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Darnell\github\GitHub\darneii\Moneycation\my-app\src\ui\screens" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

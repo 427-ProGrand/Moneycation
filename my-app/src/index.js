@@ -14,12 +14,14 @@ import 'semantic-ui-css/semantic.css';
 import AddBudget from './ui/screens/AddBudget';
 import ViewBudget from './ui/screens/ViewBudget';
 import ChooseFormPage from './ui/screens/ChooseForm';
+import LogOutPage from './ui/screens/LogOutPage';
 import { BudgetsProvider } from './contexts/BudgetsContext';
 import { AccountsProvider } from './contexts/AccountsContext';
 
 // eslint-disable-next-line react/prop-types
 function PrivateRoute({ children }) {
   const isAuthenticated = localStorage.getItem('isAuthenticated');
+  console.log(isAuthenticated);
   return isAuthenticated ? children : <Navigate to="/login" />;
 }
 
@@ -37,6 +39,7 @@ ReactDOM.render(
           <Route path="budgetForm" element={<PrivateRoute><AddBudget /></PrivateRoute>}/>
           <Route path="viewForm" element={<PrivateRoute><ViewBudget /></PrivateRoute>}/>
           <Route path="viewDates" element={<PrivateRoute><ChooseFormPage /></PrivateRoute>}/>
+          <Route path="logout" element={<PrivateRoute><LogOutPage /></PrivateRoute>}/>
         </Routes>
 
       </BrowserRouter>

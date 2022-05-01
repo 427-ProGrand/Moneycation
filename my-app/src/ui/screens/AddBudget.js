@@ -68,7 +68,6 @@ function AddBudget() {
                 />
             )
           })}
-         <BudgetCard name="Groceries" amount={200} max={300}></BudgetCard>
           <Button
               attached='bottom'
               content='Submit Form'
