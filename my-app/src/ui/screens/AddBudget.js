@@ -18,9 +18,8 @@ import { useBudgets, useContexts } from "../../contexts/BudgetsContext";
  * ***TODO: ATTACH DATA TO USER**
  */
 function AddBudget() {
-  const { budgets } = useBudgets()
-  const { income } = useBudgets()
-  const { addForm } = useBudgets()
+  const { budgets, getBudget, income, calendMoney, calBudgetMoney, addForm, calSpentMoney } = useBudgets();
+  const [endMoney, setEndMoney] = React.useState();
   const [selectedDate, setSelectedDate] = useState(null);
   const handleClick = () => {
     addForm({
@@ -30,52 +29,72 @@ function AddBudget() {
     })
   }
 
-  function findIncome (income) {
-    var totIncome = income;
-    if (income == null){
-      totIncome = 0;
-      console.log("?here")
+  function setRColor(money) {
+    if(money >-1){
+      return "green";
+    } else if (money == 0){
+      return "black";
+    } else {
+      return "red";
     }
-    return totIncome;
-  };
+  }
 
+  function setBColor(money) {
+    if(money >-1){
+      return "green";
+    } else if (money == 0){
+      return "black";
+    } else {
+      return "red";
+    }
+  }
+
+  function setBTColor(money) {
+    if(money < income[0].amount){
+      return "green";
+    } else if (money == income[0].amount){
+      return "black";
+    } else {
+      return "red";
+    }
+  }
 
   return (
-      <div>
-        <TopMenu/>
+    <div className="App">
+      <TopMenu/>
+      <div className="settings-container">
         <Container fluid className="budget-cards">
-          <Segment className="date-picker">
-            <Header>DATE: </Header>
-            <DatePicker selected={selectedDate}
-                        onChange={date => setSelectedDate(date)}/>
+          <Segment className="total-income">
+            <Header>Total Income: {income[0].amount}</Header>
+            <Segment.Inline>
+              <IncomeModal/>
+              <BudgetModal/>
+            </Segment.Inline>
           </Segment>
-                <Segment className="total-income">
-                  <Header>TOTAL: ${findIncome(income[0].amount)}</Header>
-                  <Segment.Inline>
-                    <IncomeModal/>
-                    <BudgetModal/>
-                  </Segment.Inline>
-                </Segment>
 
+          <Grid relaxed columns={5}>
           {budgets.map(budget => {
             return (
-                <BudgetCard
-                    key={budget.id}
-                    id={budget.id}
-                    name={budget.name}
-                    amount={budget.amount}
-                    max={budget.max}
-                />
+              <Grid.Column>
+              <BudgetCard
+                key={budget.id}
+                id={budget.id}
+                name={budget.name}
+                amount={budget.amount}
+                max={budget.max}
+              />
+              </Grid.Column>
             )
           })}
-         <BudgetCard name="Groceries" amount={200} max={300}></BudgetCard>
-          <Button
-              attached='bottom'
-              content='Submit Form'
-              onClick={handleClick}
-          />
+          </Grid>
+          <Segment>
+            <Header className={setBTColor(calBudgetMoney())}>Total Budget Money: ${calBudgetMoney()}</Header>
+            <Header className={setBColor(calSpentMoney())}>Total Budget Money Spent: ${calSpentMoney()}</Header>
+            <Header className={setRColor(calendMoney())}>Remaining Money: ${calendMoney()}</Header>
+          </Segment>
         </Container>
       </div>
+    </div>
   );
 }
 

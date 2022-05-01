@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import {Link} from 'react-router-dom';
 
@@ -10,7 +11,7 @@ class TopMenu extends React.Component {
             <Link to="/" className={"TopMenu-title-text"}>Moneycation</Link>
           </div>
           <nav className={"TopMenu-buttongroup", "grid-item", "rightalign"}>
-            <Link className={"TopMenu-button"} to="/planner">Planner</Link>
+            <Link className={"TopMenu-button"} to="/budgetForm">Planner</Link>
             <Link className={"TopMenu-button"}  to="/settings">Settings</Link>
             <Link className={"TopMenu-button"} to="/login">Login/Signup</Link>
           </nav>

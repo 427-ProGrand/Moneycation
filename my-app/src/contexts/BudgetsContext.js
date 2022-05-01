@@ -19,6 +19,7 @@ export const BudgetsProvider = ({ children }) => {
     setIncome(prevIncome => {
       return [{ id: uuidV4(), amount }]
     })
+    window.location = '/budgetForm';
   }
 
   function addForm({ date, income, budgets }) {
@@ -44,6 +45,7 @@ export const BudgetsProvider = ({ children }) => {
       }
       return [...prevBudgets, { id: uuidV4(), name, amount, max }]
     })
+    window.location = '/budgetForm';
   }
 
   function editBudget({ id, name, amount, max }) {
@@ -61,6 +63,24 @@ export const BudgetsProvider = ({ children }) => {
     })
   }
 
+  function calendMoney() {
+    var totIncome = income[0].amount;
+    budgets.map(b => totIncome -= b.amount);
+    return totIncome;
+  }
+
+  function calBudgetMoney() {
+    var totIncome = 0;
+    budgets.map(b => totIncome += b.max);
+    return totIncome;
+  }
+
+  function calSpentMoney() {
+    var totIncome = parseInt(0);
+    budgets.map(b => totIncome = totIncome + parseInt(b.amount));
+    return totIncome;
+  }
+
   return (
       <BudgetsContext.Provider
           value={{
@@ -70,6 +90,9 @@ export const BudgetsProvider = ({ children }) => {
             addBudget,
             addForm,
             addIncome,
+            calendMoney,
+            calBudgetMoney,
+            calSpentMoney,
             getBudget,
             editBudget,
             deleteBudget,

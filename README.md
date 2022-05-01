@@ -24,11 +24,6 @@ A web / desktop application for ICS 427 Software Quality Assurance.
 * Menu Bar Drop Down Menu Options
   * [Planner] : [View Old Sheets] [Add New Sheet]
 
-* Page to view old budget sheets [Planner]
-      * Drop down selection for previous
-      * Option to edit, add, remove data
-      * Option to delete (pop up)
-
 * Create Budget Sheet component (edited)
 
 * Website Design
