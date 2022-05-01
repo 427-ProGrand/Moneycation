@@ -26,62 +26,60 @@ export const AccountsProvider = ({ children }) => {
 
   function addAccount({ email, username, password }) {
     const check = localStorage.getItem("accounts");
-    console.log(check);
-    console.log(check[0]);
-    if ((check == null || check == "[]")& pwCheck(password)){
+    if (check != "[]") { // if there's already an account, you can't make a new one
+      console.log("Error! There's already an account made.");
+      return false;
+    } else {
+      localStorage.setItem("isAuthenticated", "true");
       console.log("Account successfully added!");
       setAccounts(prevAccounts => {
         return [{ id: uuidV4(), email, username, password }]
       })
-    } else { // if there's already an account, you can't make a new one
-      console.log("Error! There's already an account made.");
-      return false;
     }}
 
-  function editPassword({ currentPassword, newPassword, newPasswordC }) {
-    // get account
-    const allaccounts = JSON.parse(localStorage.getItem("accounts"));
-    const account = allaccounts[0];
-    console.log(accounts);
-    console.log(account);
-    // save account
-    if(currentPassword == account.password && newPassword == newPasswordC && pwCheck(newPassword)) {
-      account.password = newPassword;
-      const newA = [account];
-      setAccounts(newA);
-      return true;
-    } else {
-      console.log("it's wrong")
-      return false;
-    }
+  function editAccount({ id, email, username, password }) {
+    setAccounts(prevAccounts => {
+      if (prevAccounts.find(account => account.email === email)) {
+        return prevAccounts
+      }
+      return [...prevAccounts, { id, email, username, password }]
+    })
   }
 
-  function deleteAccount() {
-    const allaccounts = JSON.parse(localStorage.getItem("accounts"));
-    const account = allaccounts[0];
-    console.log("delete");
-    localStorage.clear();
-    window.location = '/';
+  function deleteAccount({ id }) {
+    setAccounts(prevAccounts => {
+      return prevAccounts.filter(account => account.id !== id)
+    })
   }
 
   function checkAccount({id, username, password}) {
     const allaccounts = JSON.parse(localStorage.getItem("accounts"));
     const account = allaccounts[0];
 
-    if (account.username == username && account.password == password) {
+    if(account.username == username && account.password == password){
+      localStorage.setItem("isAuthenticated", "true");
       return true;
     } else {
       return false;
     }
   }
-
-  function pwCheck(password){
-    if(password.length > 7){
+  /*
+    setAccounts(prevAccounts => {
+    if (localStorage.getItem("accounts").then(account => account.username === username && account.password == password)) {
+      console.log("Correct log in");
+      return true
+    } else {
+      console.log("Username and/or password does not match!");
+      return false
+    }
+  })
+console.log(localStorage.getItem("accounts"));
+    if(localStorage.getItem("accounts")[0].username == username && localStorage.getItem("accounts")[0].password == password){
       return true;
     } else {
       return false;
     }
-  }
+  }*/
 
 
   return (
@@ -90,10 +88,9 @@ export const AccountsProvider = ({ children }) => {
         accounts,
         forms,
         checkAccount,
-        pwCheck,
         addAccount,
         addForm,
-        editPassword,
+        editAccount,
         deleteAccount,
       }}
     >
