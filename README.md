@@ -168,6 +168,11 @@ _Karen Wong_ (https://github.com/427-ProGrand/Moneycation/tree/karenwon-budget-f
 
 #### How To Install
 
+1. Install [Node](https://nodejs.org/en/) 
+2. Download the zip file and extract to designated folder.
+3. Open up command line and move into the Moneycation folder, then move into "my-app."
+4. Run "npm install"
+5. Run "npm start"
 
 ### Closing Thoughts
 
