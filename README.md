@@ -16,18 +16,7 @@ A web / desktop application for ICS 427 Software Quality Assurance.
 * Import functionality for deleting account [Settings]
 * Import functionality to change password [Settings]
 * Editing functionality for budget
-
-#### Pending Tasks ####
-
 * Login specific pages
-
-* Menu Bar Drop Down Menu Options
-  * [Planner] : [View Old Sheets] [Add New Sheet]
-
-* Create Budget Sheet component (edited)
-
-* Website Design
-
 
 - - - -
 
@@ -125,7 +114,6 @@ _Karen Wong_ (https://github.com/427-ProGrand/Moneycation/tree/karenwon-budget-f
   * Add Budget (Complete)
   * Delete Budget (Complete)
   * Add Income (Complete)
-* View Old Budget Planner (Next)
   * Date Selector (Complete)
-  * Preview Old Sheets Functionality (WIP)
 * ESLint Config (Complete)
+* Login specific pages
