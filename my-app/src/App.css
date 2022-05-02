@@ -116,7 +116,7 @@
   flex-direction: column;
   background-color: var(--header-bg-color);
   border-radius: 5px;
-  max-width: 60vw;
+  max-width: 80vw;
   padding: 5vh 5vw 5vh 5vw;
   box-shadow: 5px 5px 5px gray;
 }

@@ -1,6 +1,9 @@
+/* eslint-disable */
 import './App.css';
 import TopMenu from './ui/components/TopMenu';
+import {Image} from 'semantic-ui-react';
 import {Link} from 'react-router-dom';
+import PlanPic from './ui/components/PlannerPicture.png';
 
 function App() {
   return (
@@ -8,7 +11,7 @@ function App() {
     <TopMenu />
     <div className={"mainpage-container"}>
       <h1>Plan out your budget!</h1>
-      <h4>temp img holder</h4>
+      <Image src={PlanPic} style={{maxWidth: "90vw"}}/>
       <h3>Sign in <Link className="mainpage-textline" to="/login">here</Link> to get started</h3>
     </div>
   </div>
