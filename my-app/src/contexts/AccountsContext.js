@@ -91,31 +91,16 @@ export const AccountsProvider = ({ children }) => {
     const allaccounts = JSON.parse(localStorage.getItem('accounts'));
     const account = allaccounts[0];
 
+    if (!account) {
+      return 1;
+    }
     if (account.username == username && account.password == password) {
       localStorage.setItem('isAuthenticated', 'true');
-      return true;
+      return 2;
     } else {
-      return false;
+      return 3;
     }
   }
-
-  /*
-    setAccounts(prevAccounts => {
-    if (localStorage.getItem("accounts").then(account => account.username === username && account.password == password)) {
-      console.log("Correct log in");
-      return true
-    } else {
-      console.log("Username and/or password does not match!");
-      return false
-    }
-  })
-console.log(localStorage.getItem("accounts"));
-    if(localStorage.getItem("accounts")[0].username == username && localStorage.getItem("accounts")[0].password == password){
-      return true;
-    } else {
-      return false;
-    }
-  }*/
 
   function pwCheck(password) {
     if (password.length > 7) {

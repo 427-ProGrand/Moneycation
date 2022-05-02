@@ -1,10 +1,10 @@
-/* eslint-disable */
+/* eslint-disable react/jsx-no-bind */
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import '../../App.css';
+import React, { useRef } from 'react';
+import { Form, Header, Button, Modal, Grid } from 'semantic-ui-react';
 import TopMenu from '../components/TopMenu';
 import { useAccounts } from '../../contexts/AccountsContext';
-import { useRef } from 'react';
-import React from 'react';
-import { Form, Header, Button, Modal, Container, Grid } from 'semantic-ui-react';
 
 function SettingsPage() {
   const [open, setOpen] = React.useState(false);
@@ -15,7 +15,7 @@ function SettingsPage() {
   const { editPassword, deleteAccount } = useAccounts();
 
   function setTxt(bool) {
-    if (bool == false) {
+    if (bool === false) {
       setErrTxt('Error! Either current or new password is invalid!');
     } else {
       setErrTxt('Password successfully changed!');
@@ -30,11 +30,6 @@ function SettingsPage() {
       newPassword: nPasswordRef.current.value,
       newPasswordC: nCPasswordRef.current.value,
     }));
-  };
-
-  function handleDeleteModal(e) {
-    e.preventDefault();
-    setOpen(true);
   }
 
   function handleDeleteAcc(e) {
@@ -43,17 +38,17 @@ function SettingsPage() {
   }
 
   return (
-    <div className='App'>
+    <div className="App">
       <TopMenu/>
 
       <div className="settings-container">
         <h1 className="settings-title">Settings</h1>
         <div className="settings-sub">
-          <div className={'parent', 'grid-container'}>
-            <div className={'grid-item', 'leftalign'}>
+          <div className="parent-grid-container">
+            <div className="leftalign">
               <h2 className="settings-headings">Change Password</h2>
             </div>
-            <div className={'grid-item', 'rightalign'}>
+            <div className="rightalign">
               <div>
                 <Form onSubmit={handlePasswordSubmit}>
                   <div className="signUp-username">
@@ -75,7 +70,7 @@ function SettingsPage() {
                     </Form.Field>
                   </div>
                   <div>
-                    <Button className={'settings-select-button'} content='CHANGE'/>
+                    <Button className="settings-select-button" content="CHANGE"/>
                   </div>
                 </Form>
                 <div>
@@ -100,15 +95,13 @@ function SettingsPage() {
             <Modal.Actions>
               <Grid relaxed padded>
                 <Form onSubmit={handleDeleteAcc}>
-                  <Button color="red" content='Yes'/>
+                  <Button color="red" content="Yes"/>
                 </Form>
                 <Button onClick={() => setOpen(false)}>No</Button>
               </Grid>
             </Modal.Actions>
           </Modal>
         </div>
-
-
       </div>
     </div>
 

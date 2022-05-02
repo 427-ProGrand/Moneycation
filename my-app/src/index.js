@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -14,7 +13,6 @@ import reportWebVitals from './reportWebVitals';
 import 'semantic-ui-css/semantic.css';
 import AddBudget from './ui/screens/AddBudget';
 import ViewBudget from './ui/screens/ViewBudget';
-import ChooseFormPage from './ui/screens/ChooseForm';
 import LogOutPage from './ui/screens/LogOutPage';
 import { BudgetsProvider } from './contexts/BudgetsContext';
 import { AccountsProvider } from './contexts/AccountsContext';
@@ -39,10 +37,8 @@ ReactDOM.render(
           <Route path="planner" element={<PrivateRoute><PlannerPage /></PrivateRoute>}/>
           <Route path="budgetForm" element={<PrivateRoute><AddBudget /></PrivateRoute>}/>
           <Route path="viewForm" element={<PrivateRoute><ViewBudget /></PrivateRoute>}/>
-          <Route path="viewDates" element={<PrivateRoute><ChooseFormPage /></PrivateRoute>}/>
           <Route path="logout" element={<PrivateRoute><LogOutPage /></PrivateRoute>}/>
         </Routes>
-
       </BrowserRouter>
     </BudgetsProvider>
   </AccountsProvider>,

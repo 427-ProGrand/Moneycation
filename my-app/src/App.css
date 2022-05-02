@@ -71,6 +71,14 @@
 .grid-item {
 }
 
+.parent-grid-container {
+  flexDirection: "row";
+  justifyContent: "space-between";
+  display: grid;
+  grid-template-columns: auto auto;
+
+}
+
 .leftalign {
   text-align: left;
   margin-top: auto;
@@ -144,7 +152,7 @@
   block-size: fit-content;
   width: fit-content;
   padding: 0px;
-  margin: 0px;
+  margin: 10px;
 }
 
 .TopMenu-title-text {
