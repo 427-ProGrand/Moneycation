@@ -140,7 +140,7 @@ _Karen Wong_ (https://github.com/427-ProGrand/Moneycation/tree/karenwon-budget-f
 [Repository](https://github.com/427-ProGrand/Moneycation)
 [Release Version 1.0.0](https://github.com/427-ProGrand/Moneycation/releases/tag/v1.0.0)
 [Wiki Page](https://github.com/427-ProGrand/moneycation.github.io)
-[Documentation]
+[Documentation](https://github.com/427-ProGrand/moneycation.github.io/blob/main/Report5_ProGrand.pdf)
 
 ### Technical Notes
 
