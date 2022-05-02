@@ -10,8 +10,8 @@ A web / desktop application for ICS 427 Software Quality Assurance.
 5. [Assignment 5](#Assignment-5)
 6. [Links](#Links)
 7. [Technical Notes](#Technical-Notes)
-⋅⋅* [Specifications](#Specifications)
-⋅⋅* [How To Install](#How-To-Install)
+ * [Specifications](#Specifications)
+ * [How To Install](#How-To-Install)
 8. [Closing Thoughts](#Closing-Thoughts)
 
 - - - -
