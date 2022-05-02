@@ -176,5 +176,4 @@ _Karen Wong_ (https://github.com/427-ProGrand/Moneycation/tree/karenwon-budget-f
 
 ### Closing Thoughts
 
-There was many challenges working on this. We had no experience when it comes to security and analysis, so we were going in this completely blind. Some unxpected challenges were using React, the most updated version we used had bugs that required very specific patches and workarounds just to get it to work. Some disappointments we had is not being able to implement everything we intitially wanted to, both planner functions and the security side of things. 
-
+There were many challenges working on this. We had no experience when it comes to security and analysis, so we were going in completely blind. Some unexpected challenges were using React, the most updated version we used had bugs that required very specific patches and workarounds just to get it to work. Some disappointments we had is not being able to implement everything we initially wanted to, both planner functions and the security side of things.
