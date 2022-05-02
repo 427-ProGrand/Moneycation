@@ -2,6 +2,18 @@
 
 A web / desktop application for ICS 427 Software Quality Assurance.
 
+## Table of Contents
+1. [Completed Tasks](#Completed-Tasks)
+2. [Assignment 2](#Assignment-2:-What-each-team-member-worked-on-within-the-project-so-far,-and-what-they-will-be-handling-next)
+3. [Assignment 3](#Assignment-3:-What-each-team-member-worked-on-within-the-project-so-far,-and-what-they-will-be-handling-next)
+4. [Assignment 4](#Assignment-4:-What-each-team-member-worked-on-within-the-project-so-far,-and-what-they-will-be-handling-next)
+5. [Assignment 5](#Assignment-5:-What-each-team-member-worked-on-within-the-project-so-far.)
+6. [Links](#Links)
+7. [Technical Notes](#Technical-Notes)
+⋅⋅* [Specifications](#Specifications)
+⋅⋅* [How To Install](#How-To-Install)
+8. [Closing Thoughts](#Closing-Thoughts)
+
 - - - -
 
 #### Completed Tasks ####
@@ -116,4 +128,44 @@ _Karen Wong_ (https://github.com/427-ProGrand/Moneycation/tree/karenwon-budget-f
   * Add Income (Complete)
   * Date Selector (Complete)
 * ESLint Config (Complete)
-* Login specific pages
+* Login specific pages)
+* Wiki Page User Guide
+
+
+### Links
+[Repository](https://github.com/427-ProGrand/Moneycation)
+[Release Version 1.0.0](https://github.com/427-ProGrand/Moneycation/releases/tag/v1.0.0)
+[Wiki Page](https://github.com/427-ProGrand/moneycation.github.io)
+[Documentation]
+
+### Technical Notes
+
+#### Specifications 
+* @semantic-ui-react/css-patch@1.0.0
+* @testing-library/jest-dom@5.16.4
+* @testing-library/react@12.1.4
+* @testing-library/user-event@13.5.0
+* eslint-config-airbnb@19.0.4
+* eslint-plugin-import@2.26.0
+* eslint-plugin-jsx-a11y@6.5.1
+* eslint-plugin-react-hooks@4.4.0
+* eslint-plugin-react@7.29.4
+* eslint@8.13.0
+* iroh@0.3.0
+* react-datepicker@4.7.0
+* react-dom@17.0.2
+* react-router-dom@6.3.0
+* react-router@6.3.0
+* react-scripts@5.0.0
+* react-select@5.3.0
+* react@17.0.2
+* semantic-ui-css@2.4.1
+* semantic-ui-react@2.1.2
+
+#### How To Install
+
+
+### Closing Thoughts
+
+There was many challenges working on this. We had no experience when it comes to security and analysis, so we were going in this completely blind. Some unxpected challenges were using React, the most updated version we used had bugs that required very specific patches and workarounds just to get it to work. Some disappointments we had is not being able to implement everything we intitially wanted to, both planner functions and the security side of things. 
+
