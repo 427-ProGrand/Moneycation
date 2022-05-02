@@ -112,6 +112,7 @@ _Katherine Piniol_ (https://github.com/427-ProGrand/Moneycation/tree/piniolk-wor
 * Login/Signup Functionality (Complete)
 * Settings Page Functionality (Complete)
 * Editing functionality for budget
+* Start wiki homepage
 
 _Darnell Domingo_
 (https://github.com/427-ProGrand/Moneycation/tree/branch-login) (https://github.com/427-ProGrand/Moneycation/tree/branch-signup)

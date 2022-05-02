@@ -2,6 +2,7 @@
 import React, { useContext, useState } from 'react';
 import { v4 as uuidV4 } from 'uuid';
 import useLocalStorage from '../hooks/useLocalStorage';
+const Iroh = require('iroh/dist/iroh-node')
 
 const AccountsContext = React.createContext();
 
@@ -14,9 +15,6 @@ export const AccountsProvider = ({ children }) => {
   const [forms, setForms] = useLocalStorage('forms', []);
 
   function addForm({ date, accounts }) {
-    console.log(date);
-    console.log(accounts);
-
     setForms(prevForms => {
       return [...prevForms, {
         id: uuidV4(),
@@ -28,11 +26,15 @@ export const AccountsProvider = ({ children }) => {
 
   function addAccount({ email, username, password }) {
     const check = localStorage.getItem('accounts');
-    console.log(check);
-    console.log(check[0]);
     if ((check == null || check == '[]') & pwCheck(password)) {
       localStorage.setItem('isAuthenticated', 'true');
-      console.log('Account successfully added!');
+      let code = 'const check = localStorage.getItem(\'isAuthenticated\');';
+      let stage = new Iroh.Stage(code);
+      stage.addListener(Iroh.VAR).on("after", function(e) {
+          console.log("Account successfully added!", e.name, "=>", e.value);
+        }
+      );
+      eval(stage.script);
       setAccounts(prevAccounts => {
         return [{
           id: uuidV4(),
@@ -65,12 +67,17 @@ export const AccountsProvider = ({ children }) => {
     // get account
     const allaccounts = JSON.parse(localStorage.getItem('accounts'));
     const account = allaccounts[0];
-    console.log(accounts);
-    console.log(account);
     // save account
     if (currentPassword == account.password && newPassword == newPasswordC && pwCheck(newPassword)) {
       account.password = newPassword;
       const newA = [account];
+      let code = 'const newA = [account];';
+      let stage = new Iroh.Stage(code);
+      stage.addListener(Iroh.VAR).on("after", function(e) {
+          console.log("Account Password Changed", e.name, "=>", e.value);
+        }
+      );
+      eval(stage.script);
       setAccounts(newA);
       return true;
     } else {
@@ -84,38 +91,43 @@ export const AccountsProvider = ({ children }) => {
     const account = allaccounts[0];
     console.log('delete');
     localStorage.clear();
+    let code = 'const account = allaccounts[0];';
+    let stage = new Iroh.Stage(code);
+    stage.addListener(Iroh.VAR).on("after", function(e) {
+        console.log("Deleted Accunt", e.name, "=>", e.value);
+      }
+    );
+    eval(stage.script);
     window.location = '/';
   }
 
   function checkAccount({ id, username, password }) {
     const allaccounts = JSON.parse(localStorage.getItem('accounts'));
     const account = allaccounts[0];
-
+    let code = ' const account = allaccounts[0];';
+    let stage = new Iroh.Stage(code);
+    stage.addListener(Iroh.VAR).on("after", function(e) {
+        console.log("Current", e.name, "=>", e.value);
+      }
+    );
+    eval(stage.script);
+    if (!account) {
+      return 1;
+    }
     if (account.username == username && account.password == password) {
       localStorage.setItem('isAuthenticated', 'true');
-      return true;
+      let code2 = 'const check = localStorage.getItem(\'isAuthenticated\');';
+      let stage = new Iroh.Stage(code2);
+      stage.addListener(Iroh.VAR).on("after", function(e) {
+          console.log("Authenticated", e.name, "=>", e.value);
+        }
+      );
+      eval(stage.script);
+      return 2;
     } else {
-      return false;
+      return 3;
     }
   }
-
-  /*
-    setAccounts(prevAccounts => {
-    if (localStorage.getItem("accounts").then(account => account.username === username && account.password == password)) {
-      console.log("Correct log in");
-      return true
-    } else {
-      console.log("Username and/or password does not match!");
-      return false
-    }
-  })
-console.log(localStorage.getItem("accounts"));
-    if(localStorage.getItem("accounts")[0].username == username && localStorage.getItem("accounts")[0].password == password){
-      return true;
-    } else {
-      return false;
-    }
-  }*/
 
   function pwCheck(password) {
     if (password.length > 7) {
