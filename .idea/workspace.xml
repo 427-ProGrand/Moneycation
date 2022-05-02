@@ -5,31 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef226a3b-8d04-4844-9e4d-7c6aa3d269fe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/ui/screens/af.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/Util.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Util.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/contexts/AccountsContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/contexts/AccountsContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/hooks/useLocalStorage.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/hooks/useLocalStorage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/reportWebVitals.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/reportWebVitals.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/ui/components/AddIncome.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/ui/components/AddIncome.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/ui/components/BudgetCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/ui/components/BudgetCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/ui/components/BudgetForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/ui/components/BudgetModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/ui/components/BudgetModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/ui/components/EditModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/ui/components/EditModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/ui/components/TopMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/ui/components/TopMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/ui/screens/AddBudget.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/ui/screens/AddBudget.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/ui/screens/ChooseForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/ui/screens/ErrorPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/ui/screens/ErrorPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/ui/screens/LogOutPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/ui/screens/LogOutPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/ui/screens/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/ui/screens/LoginPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/ui/screens/PlannerPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/ui/screens/PlannerPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/ui/screens/SettingsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/ui/screens/SettingsPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/ui/screens/SignupPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/ui/screens/SignupPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/ui/screens/ViewBudget.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/ui/screens/ViewBudget.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/contexts/BudgetsContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/contexts/BudgetsContext.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +96,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
@@ -193,8 +172,8 @@
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
-    <property name="node.js.selected.package.eslint" value="C:\Users\Katherine\GitHub\piniolk\Moneycation\my-app\node_modules\eslint" />
-    <property name="node.js.selected.package.standard" value="C:\Users\Katherine\GitHub\piniolk\Moneycation\my-app\node_modules\eslint" />
+    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/my-app/node_modules/eslint" />
+    <property name="node.js.selected.package.standard" value="C:/Users/Katherine/GitHub/piniolk/Moneycation/my-app/node_modules/eslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -246,6 +225,9 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
