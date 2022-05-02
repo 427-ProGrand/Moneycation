@@ -4,10 +4,10 @@ A web / desktop application for ICS 427 Software Quality Assurance.
 
 ## Table of Contents
 1. [Completed Tasks](#Completed-Tasks)
-2. [Assignment 2](#Assignment-2:-What-each-team-member-worked-on-within-the-project-so-far,-and-what-they-will-be-handling-next)
-3. [Assignment 3](#Assignment-3:-What-each-team-member-worked-on-within-the-project-so-far,-and-what-they-will-be-handling-next)
-4. [Assignment 4](#Assignment-4:-What-each-team-member-worked-on-within-the-project-so-far,-and-what-they-will-be-handling-next)
-5. [Assignment 5](#Assignment-5:-What-each-team-member-worked-on-within-the-project-so-far.)
+2. [Assignment 2](#Assignment-2)
+3. [Assignment 3](#Assignment-3)
+4. [Assignment 4](#Assignment-4)
+5. [Assignment 5](#Assignment-5)
 6. [Links](#Links)
 7. [Technical Notes](#Technical-Notes)
 ⋅⋅* [Specifications](#Specifications)
@@ -32,7 +32,8 @@ A web / desktop application for ICS 427 Software Quality Assurance.
 
 - - - -
 
-#### Assignment 2: What each team member worked on within the project so far, and what they will be handling next ####
+#### Assignment 2
+#### What each team member worked on within the project so far, and what they will be handling next
 
 _Katherine Piniol_
 
@@ -50,7 +51,8 @@ _Karen Wong_
 
 - - - -
 
-#### Assignment 3: What each team member worked on within the project so far, and what they will be handling next ####
+#### Assignment 3
+#### What each team member worked on within the project so far, and what they will be handling next
 
 _Katherine Piniol_ (https://github.com/427-ProGrand/Moneycation/tree/piniolk-work)
 
@@ -75,7 +77,8 @@ _Karen Wong_ (https://github.com/427-ProGrand/Moneycation/tree/karenwon-budget-f
 
 - - - -
 
-#### Assignment 4: What each team member worked on within the project so far, and what they will be handling next ####
+#### Assignment 4
+#### What each team member worked on within the project so far, and what they will be handling next
 
 _Katherine Piniol_ (https://github.com/427-ProGrand/Moneycation/tree/piniolk-work)
 
@@ -103,7 +106,8 @@ _Karen Wong_ (https://github.com/427-ProGrand/Moneycation/tree/karenwon-budget-f
  
 - - - -
 
-#### Assignment 5: What each team member worked on within the project so far. ####
+#### Assignment 5
+#### What each team member worked on within the project so far.
 
 _Katherine Piniol_ (https://github.com/427-ProGrand/Moneycation/tree/piniolk-work)
 
